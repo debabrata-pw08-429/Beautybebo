@@ -31,6 +31,7 @@
   color: #dd0285;
   font-size: 16px;
   font-weight: bolder;
+  margin: auto 5px;
 }
 
 .discount_per {
@@ -56,7 +57,7 @@ button {
 }
 
 .fa-bucket {
-  margin-right: 5px;
+  margin: auto 10px;
 }
 
 .fa-heart,
@@ -76,11 +77,11 @@ button {
 .btn_fav {
   padding: 7px;
   background-color: gray;
+  margin: auto 5px;
 }
 .btn_fav:hover {
   background-color: #dd0285;
 }
-
 /* -------------------------------------------------Product Header Left Right Navigation------------------------------------ */
 
 main {

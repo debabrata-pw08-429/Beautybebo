@@ -1,0 +1,25 @@
+#section_3 {
+  border: 1px solid #ddd;
+  height: 600px;
+}
+
+#filter_box_S3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#filter_box_S3 > div {
+  text-align: center;
+  padding: 10px 50px;
+  border-left: 1px solid #ddd;
+}
+
+#filter_box_S3 > div:hover {
+  color: #dd0285;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 14px 28px,
+    rgba(240, 46, 170, 0.3) 0px 10px 10px;
+}
+
+#filter_box_S3 > div > img {
+  width: 30px;
+}

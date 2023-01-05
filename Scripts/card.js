@@ -9,6 +9,7 @@ let maxMove = 203;
 // mobile_view
 let mob_view = window.matchMedia("(max-width: 768px)");
 if (mob_view.matches) {
+  product_page = Math.ceil(product.length / 2);
   movePer = 50.36;
   maxMove = 504;
 }
