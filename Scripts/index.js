@@ -1,5 +1,3 @@
-
-
 // Product List and append on section 2
 var productList = [
   {
@@ -183,9 +181,6 @@ function displayproducts(list) {
     document.querySelector("#card_container").append(div);
   });
 }
-
-
-
 
 /* For image Slideshow Container - section 1 */
 let slideIndex = 0;
