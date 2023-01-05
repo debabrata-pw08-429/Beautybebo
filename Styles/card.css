@@ -1,0 +1,162 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#card_container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#card_container > div {
+  text-align: center;
+  padding: 8px;
+}
+
+#card_container > div > p:nth-child(3) {
+  margin: -10px 0px;
+}
+#card_container > div > p:nth-child(4) {
+  margin: 12px auto;
+}
+
+.strike_off_price {
+  color: rgb(136, 136, 136);
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.price {
+  color: #dd0285;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.discount_per {
+  color: #008000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Buttons and icons css */
+button {
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.fa-star {
+  color: #eca330;
+  font-size: 10px;
+}
+
+.fa-star + span {
+  color: #999;
+  font-size: 12px;
+}
+
+.fa-bucket {
+  margin-right: 5px;
+}
+
+.fa-heart,
+.fa-bucket,
+.btn_add {
+  color: whitesmoke;
+}
+
+.btn_add {
+  padding: 7px 15px;
+  background-color: #dd0285;
+}
+.btn_add:hover {
+  background-color: green;
+}
+
+.btn_fav {
+  padding: 7px;
+  background-color: gray;
+}
+.btn_fav:hover {
+  background-color: #dd0285;
+}
+
+/* -------------------------------------------------Product Header Left Right Navigation------------------------------------ */
+
+main {
+  width: 80%;
+  height: 840px;
+  margin: 10px auto;
+  position: absolute;
+  padding: 5px 0;
+}
+
+#header_pro_nav {
+  width: 98%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+h3 {
+  color: #dd0285;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+h3 + p {
+  margin-right: -32px;
+  margin-bottom: -12px;
+}
+
+#header_pro_nav p span {
+  font-size: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #555;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#header_pro_nav > p > span > button {
+  padding: 5px 10px;
+}
+
+#header_pro_nav > p > span > button:hover {
+  background-color: #dd0285;
+  color: white;
+}
+
+/* -------------------------------------------------Product Header Left Right Navigation------------------------------------ */
+#card_container {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  height: 510px;
+  /* background: red; */
+}
+
+#card_container::-webkit-scrollbar {
+  display: none;
+}
+
+#card_container > div {
+  min-width: 24%;
+  height: 90%;
+  margin: 0 20px 0 0;
+  border-right: 1px solid rgb(233, 233, 233);
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+}
+
+#card_container > div > img {
+  width: 100%;
+}
