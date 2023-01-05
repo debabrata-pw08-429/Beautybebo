@@ -82,7 +82,7 @@ button {
 .btn_fav:hover {
   background-color: #dd0285;
 }
-/* -------------------------------------------------Product Header Left Right Navigation------------------------------------ */
+/* -------------------------------------------------Product Header Left Right Navigation--------------start---------------------- */
 
 main {
   width: 80%;
@@ -135,7 +135,7 @@ h3 + p {
   color: white;
 }
 
-/* -------------------------------------------------Product Header Left Right Navigation------------------------------------ */
+/* -------------------------------------------------Product Header Left Right Navigation-------------end----------------------- */
 #card_container {
   display: flex;
   align-items: center;

@@ -115,7 +115,7 @@ var productList = [
 
 var id = 1;
 var qty = 1;
-console.log(productList);
+// console.log(productList);
 
 displayproducts(productList);
 function displayproducts(list) {
