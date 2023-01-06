@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <style>
+      .container {
+  display: flex;
+  
+}
+
+.container > div {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid blue;
+  
+}
+
+    </style>
 </head>
 <body>
+ <h1>CUSTOMER LOGIN</h1>
+ <div class="container" > 
     
+    <div id="column1" >
+        <form class="loginform">
+        <h1>REGISTERED CUSTOMERS</h1><br><br>
+        <p>If you have an account, sign in with your email address.</p><br><br>
+        <div class="containernew">
+            <label for="email"><b>Email</b></label><br>
+            <input type="text" placeholder="Enter your email" name="email" required><br><br>
+      
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+              
+            <button type="submit">SIGNIN</button>
+          </div>
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="psw">Forgot Your Password</button>
+
+          </div>
+        </form>
+    </div>
+
+    <div id="column2">
+        <h1>NEW CUSTOMERS</h1><br><br>
+        <p>Creating an account has many benefits: check out faster, keep more than one address, track orders and more.</p><br><br>
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href="ragister.html">CREATE AN ACCOUNT</a></button>
+       
+    </div>
+ </div>
 </body>
+<script>
+    var forgot = document.getElementById('id01');
+    window.onclick = function(event) {
+        if (event.target == forgot) {
+            forgot.style.display = "none";
+        }
+    }
+    var modal = document.getElementById('id02');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
 </html>
