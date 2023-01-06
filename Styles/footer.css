@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#wholeBody {
+  background-color: rgb(45, 41, 41);
+}
+#parentfooter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#parentfooter > div {
+  margin-left: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.listStyle > li {
+  color: rgb(212, 216, 220);
+  margin: 10px;
+}
+.listStyle > li:hover {
+  cursor: pointer;
+  color: rgb(255, 0, 128);
+}
+.listStyle > h4 {
+  margin-left: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: 2px dashed rgb(255, 0, 128) underline;
+  color: rgb(212, 216, 220);
+}
+#socialMedia {
+  font-size: 35px;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+#socialMedia > div {
+  color: rgb(255, 0, 128);
+}
+#socialMedia > div :hover {
+  cursor: pointer;
+}
+#belowfooter {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+#belowfooter h3 {
+  margin: 5px -60px 0px -100px;
+  color: rgb(212, 216, 220);
+}
+#belowfooter :nth-child(1) {
+  width: 50%;
+}
+#belowfooter :nth-child(2) {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 10px;
+  color: rgb(212, 216, 220);
+}
+#belowfooter button {
+  width: 100%;
+  padding: 12px 20px 12px 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(255, 0, 128);
+  color: rgb(212, 216, 220);
+  font-weight: 800;
+}
+#belowfooter button:hover {
+  cursor: pointer;
+}
+#belowfooter input[type="email"] {
+  width: 250%;
+  padding: 12px 0px 12px 10px;
+  margin-left: -190px;
+  color: rgb(212, 216, 220);
+}
+
+#wholeBody > p {
+  color: rgb(212, 216, 220);
+  text-align: center;
+  margin: auto;
+}
+
+#wholeBody {
+  padding-top: 20px;
+  border-top: 3px solid rgb(255, 0, 128);
+}
