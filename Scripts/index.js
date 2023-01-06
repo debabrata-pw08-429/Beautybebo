@@ -165,6 +165,9 @@ function displayproducts(list) {
     var button = document.createElement("button");
     button.setAttribute("class", "btn_add");
     button.textContent = "Add to cart";
+    button.addEventListener("click",function(){
+      fun1(elem);
+    })
 
     var icon_add = document.createElement("i");
     icon_add.setAttribute("class", "fa-solid fa-bucket");
@@ -172,6 +175,12 @@ function displayproducts(list) {
 
     var button_fav = document.createElement("button");
     button_fav.setAttribute("class", "btn_fav");
+
+    button_fav.addEventListener("click",function(){
+      fun2(elem);
+    });
+     
+
 
     var icon_fav = document.createElement("i");
     icon_fav.setAttribute("class", "fa-solid fa-heart");
@@ -203,4 +212,17 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000);
+}
+
+var cartlist= JSON.parse(localStorage.getItem("cartlist"))|| [];
+function fun1(data){
+  cartlist.push(data);
+  localStorage.setItem("cartlist",JSON.stringify(cartlist));
+}
+
+
+var favlist= JSON.parse(localStorage.getItem("favlist"))||[];
+function fun2(data){
+  favlist.push(data);
+  localStorage.setItem("cartlist",JSON.stringify(favlist));
 }
