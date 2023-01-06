@@ -89,10 +89,10 @@
     </div>
 </header>    
 <!--                //  it is for navBar section   //                   -->
+
 <nav>
     <div id = "parentNavBar">
-        <div>
-            MAKEUP
+        <div>MAKE UP
             <i class="fa-solid fa-chevron-down"></i>
         </div>
         <div>SKIN
@@ -116,14 +116,36 @@
         <div>BRANDS
             <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div>MY CART</div>
+        <div>MY CART
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
     </div>
 </nav>
 
 
 </body>
 </html>
+<script>
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
 
 
