@@ -30,3 +30,14 @@ document
 function addProfile() {
   window.location.href = "login.html";
 }
+
+// Cart Total -
+
+var cart = JSON.parse(localStorage.getItem("cartlist")) || [];
+window.onload = function Subtotal() {
+  var total = cart.reduce((acc, curr) => {
+    return (acc + curr.price) * curr.qty;
+  }, 0);
+  document.querySelector("#Cart_Total").innerHTML = "₹" + Number(total);
+  document.querySelector("#Cart_Total").style.backgroundColor = "black";
+};

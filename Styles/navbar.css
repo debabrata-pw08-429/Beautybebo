@@ -111,10 +111,9 @@ body {
   background-color: rgb(255, 0, 128);
   cursor: pointer;
 }
-#parentNavBar > div > a{
+#parentNavBar > div > a {
   font-size: 14px;
   width: auto;
-  
 }
 #parentNavBar div:hover {
   background-color: rgb(184, 77, 123);
@@ -167,4 +166,8 @@ body {
 
 #favourites > div {
   cursor: pointer;
+}
+
+#Cart_Total {
+  padding: 5px;
 }
