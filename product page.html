@@ -15,6 +15,7 @@
   <body>
     <!-- --------------------------------------------------------------HEADER------------------------------------------------------------------------  -->
     <div id="top_main">
+      <!-----                    it is for upperBanner                       ---->
       <header>
         <div id="upperBanner">
           <div>
@@ -24,8 +25,8 @@
             />
           </div>
           <!-- <div id = "googlePlayStore">
-              <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="google play store">
-           </div> -->
+            <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="google play store">
+         </div> -->
         </div>
         <!--                  //   it is for above navBar section   //         -->
         <div id="aboveNavBar">
@@ -82,7 +83,7 @@
               </div>
             </div>
           </div>
-          <div id="favourites">
+          <div id="favourites" onclick="SendToFavourite()">
             <div>
               <i class="fa-solid fa-heart"></i>
             </div>
@@ -100,39 +101,51 @@
       <nav>
         <div id="parentNavBar">
           <div>
-            <a href="product page.html" target="_blank">MAKE UP</a>
-
-            <i class="fa-solid fa-chevron-down"></i>
+            <a href="product page.html" target="_blank"
+              >MAKE UP
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
           </div>
           <div>
-            <a href="product page.html" target="_blank">SKIN</a>
-
-            <i class="fa-solid fa-chevron-down"></i>
+            <a href="product page.html" target="_blank"
+              >SKIN
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
           </div>
           <div>
-            <a href="product page.html" target="_blank">HAIR</a>
-
-            <i class="fa-solid fa-chevron-down"></i>
+            <a href="product page.html" target="_blank"
+              >HAIR
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
           </div>
           <div>
-            PERSONAL CARE
-            <i class="fa-solid fa-chevron-down"></i>
+            <a href="product page.html" target="_blank"
+              >PERSONAL CARE
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
           </div>
           <div>
-            MOM & BABY CARE
-            <i class="fa-solid fa-chevron-down"></i>
+            <a href="product page.html" target="_blank"
+              >MOM & BABY CARE
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
           </div>
           <div>
-            FRAGRANCE
-            <i class="fa-solid fa-chevron-down"></i>
+            <a href="product page.html" target="_blank"
+              >FRAGRANCE <span> <i class="fa-solid fa-chevron-down"></i></span
+            ></a>
           </div>
           <div>
-            AYURVEDA
-            <i class="fa-solid fa-chevron-down"></i>
+            <a href="product page.html" target="_blank"
+              >AYURVEDA
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
           </div>
           <div>
-            BRANDS
-            <i class="fa-solid fa-chevron-down"></i>
+            <a href="product page.html" target="_blank"
+              >BRANDS
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
           </div>
           <div>
             MY CART<span id="Cart_Total"></span>
@@ -298,4 +311,5 @@
     </footer>
   </body>
 </html>
-<script type="text/javascript" src="Scripts/product page.js"></script>
+<script src="./Scripts/navbar.js"></script>
+<script src="Scripts/product page.js"></script>

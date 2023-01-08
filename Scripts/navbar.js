@@ -1,5 +1,7 @@
-document.querySelector("#MyProfile > p").addEventListener("click", link_to_ac);
-function link_to_ac() {
+// Page Linking and ahrefs -
+
+document.querySelector("#MyProfile > p").addEventListener("click", link_to_acc);
+function link_to_acc() {
   window.location.href = "account.html";
 }
 
@@ -10,15 +12,21 @@ document
 function link_to_homepage() {
   window.location.href = "index.html";
 }
-document.querySelector("#parentNavBar div:last-child").addEventListener("click",sentToCart);
- function sentToCart(){
-    window.location.href = "cart.html";
- }
-//  document.querySelector("#favourites div").addEventListener("click",SendToFavourite)
- function SendToFavourite(){
-  window.location.href = "product page.html";
+document
+  .querySelector("#parentNavBar div:last-child")
+  .addEventListener("click", sentToCart);
+function sentToCart() {
+  window.location.href = "cart.html";
 }
-document.querySelector("#MyProfile").addEventListener("click",addProfile);
-function addProfile(){
-    window.location.href = "product page.html"
+// document
+//   .querySelector("#favourites div")
+//   .addEventListener("click", SendToFavourite);
+function SendToFavourite() {
+  window.location.href = "login.html";
+}
+document
+  .querySelector("#MyProfile > div")
+  .addEventListener("click", addProfile);
+function addProfile() {
+  window.location.href = "login.html";
 }

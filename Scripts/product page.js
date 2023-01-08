@@ -177,10 +177,32 @@ function displayproducts(list) {
     icon_fav.setAttribute("class", "fa-solid fa-heart");
     button_fav.append(icon_fav);
 
+    // All Event Listners -
+    button.addEventListener("click", function () {
+      fun1(elem);
+    });
+
+    button_fav.addEventListener("click", function () {
+      fun2(elem);
+    });
     div.append(image, title, Icon_p, price_p, button, button_fav);
     document.querySelector("#card_container").append(div);
   });
 }
+
+// Cart Local Storage -
+var cartlist = JSON.parse(localStorage.getItem("cartlist")) || [];
+function fun1(data) {
+  cartlist.push(data);
+  localStorage.setItem("cartlist", JSON.stringify(cartlist));
+}
+// Favlist Local Storage
+var favlist = JSON.parse(localStorage.getItem("favlist")) || [];
+function fun2(data) {
+  favlist.push(data);
+  localStorage.setItem("favlist", JSON.stringify(favlist));
+}
+
 function handleFilter() {
   var selected = document.getElementById("FilterCate").value;
 

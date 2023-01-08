@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/navbar.css">
-    <link rel="stylesheet" href="Styles/footer.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/navbar.css" />
+    <link rel="stylesheet" href="Styles/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -15,283 +15,321 @@
     />
     <title>Ragister</title>
     <style>
-        .containernew{
-  padding: 16px;
-  background-color: white;
-}
-.signupbtn :hover {
- opacity: 1;
-}
-.modal-content{
-    text-align: center;
-}
-input[type=text], input[type=password], input[type=number] {
-  width: 35%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-input:hover,
-.btn:hover {
-  opacity: 1;
-}
-.fb {
-  background-color: #3B5998;
-  color: white;
-}
+      .containernew {
+        padding: 16px;
+        background-color: white;
+      }
+      .signupbtn :hover {
+        opacity: 1;
+      }
+      .modal-content {
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="number"] {
+        width: 35%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+      input:hover,
+      .btn:hover {
+        opacity: 1;
+      }
+      .fb {
+        background-color: #3b5998;
+        color: white;
+      }
 
-.google {
-  background-color: #dd4b39;
-  color: white;
-}
-.col {
-  float: left;
-  width: 50%;
-  margin: auto;
-  padding: 0 50px;
-  margin-top: 6px;
-}
-.col {
-    width: 100%;
-    margin-top: 0;
-  }
+      .google {
+        background-color: #dd4b39;
+        color: white;
+      }
+      .col {
+        float: left;
+        width: 50%;
+        margin: auto;
+        padding: 0 50px;
+        margin-top: 6px;
+      }
+      .col {
+        width: 100%;
+        margin-top: 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="upperBanner">
-          <div>
-            <img
-              src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
-              alt="upperBanner"
-            />
-          </div>
-          <!-- <div id = "googlePlayStore">
+      <div id="upperBanner">
+        <div>
+          <img
+            src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
+            alt="upperBanner"
+          />
+        </div>
+        <!-- <div id = "googlePlayStore">
               <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="google play store">
            </div> -->
+      </div>
+      <!--                  //   it is for above navBar section   //         -->
+      <div id="aboveNavBar">
+        <div>
+          <img
+            src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
+            alt="comapny logo"
+          />
         </div>
-        <!--                  //   it is for above navBar section   //         -->
-        <div id="aboveNavBar">
-          <div>
-            <img
-              src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
-              alt="comapny logo"
-            />
+        <!--                //    it is search & categorybox   //               -->
+        <div class="serchandcategory">
+          <div class="categoryBox">
+            <select>
+              <option value="">All Categories</option>
+              <option value="">--Makeup</option>
+              <option value="">----Face</option>
+              <option value="">------Foundation</option>
+              <option value="">------Foundation</option>
+              <option value="">------Foundation</option>
+              <option value="">----Eye</option>
+              <option value="">------Eye Shadow</option>
+              <option value="">------Eye Shadow</option>
+              <option value="">------Eye Shadow</option>
+              <option value="">--Skin</option>
+              <option value="">----Body Care</option>
+              <option value="">------Body Moisturiser</option>
+              <option value="">------Body Moisturiser</option>
+              <option value="">------Body Moisturiser</option>
+              <option value="">----Face Care</option>
+              <option value="">------Facial Kits</option>
+              <option value="">------Facial Kits</option>
+              <option value="">------Facial Kits</option>
+              <option value="">--Hair</option>
+              <option value="">----Hair Care</option>
+              <option value="">------Hair Color</option>
+              <option value="">------Hair Color</option>
+              <option value="">------Hair Color</option>
+              <option value="">----Hair Loss</option>
+              <option value="">------Shampoo</option>
+              <option value="">------Shampoo</option>
+              <option value="">------Shampoo</option>
+            </select>
           </div>
-          <!--                //    it is search & categorybox   //               -->
-          <div class="serchandcategory">
-            <div class="categoryBox">
-              <select>
-                <option value="">All Categories</option>
-                <option value="">--Makeup</option>
-                <option value="">----Face</option>
-                <option value="">------Foundation</option>
-                <option value="">------Foundation</option>
-                <option value="">------Foundation</option>
-                <option value="">----Eye</option>
-                <option value="">------Eye Shadow</option>
-                <option value="">------Eye Shadow</option>
-                <option value="">------Eye Shadow</option>
-                <option value="">--Skin</option>
-                <option value="">----Body Care</option>
-                <option value="">------Body Moisturiser</option>
-                <option value="">------Body Moisturiser</option>
-                <option value="">------Body Moisturiser</option>
-                <option value="">----Face Care</option>
-                <option value="">------Facial Kits</option>
-                <option value="">------Facial Kits</option>
-                <option value="">------Facial Kits</option>
-                <option value="">--Hair</option>
-                <option value="">----Hair Care</option>
-                <option value="">------Hair Color</option>
-                <option value="">------Hair Color</option>
-                <option value="">------Hair Color</option>
-                <option value="">----Hair Loss</option>
-                <option value="">------Shampoo</option>
-                <option value="">------Shampoo</option>
-                <option value="">------Shampoo</option>
-              </select>
-            </div>
-            <div class="searchBox">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Enter your search..."
-                  class="inputSearch"
-                />
-              </div>
-              <div id="searchIcon">
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-              </div>
-            </div>
-          </div>
-          <div id="favourites" onclick="SendToFavourite()">
+          <div class="searchBox">
             <div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-          </div>
-          <div id="MyProfile">
-            <div>
-              <i class="fa-solid fa-user"></i>
-            </div>
-            <p>My Account</p>
-          </div>
-        </div>
-      </header>
-      <!--                //  it is for navBar section   //                   -->
-  
-      <nav>
-        <div id="parentNavBar">
-          <div>
-            <a href="product page.html" target="_blank">MAKE UP
-              <span> <i class="fa-solid fa-chevron-down"></i></span>
-            </a>
-  
-           
-          </div>
-          <div>
-              <a href="product page.html" target="_blank">SKIN
-                <span> <i class="fa-solid fa-chevron-down"></i></span>
-              </a>
-            
-          </div>
-          <div>
-              <a href="product page.html" target="_blank">HAIR
-                <span> <i class="fa-solid fa-chevron-down"></i></span>
-              </a>
-            
-          </div>
-          <div>
-              <a href="product page.html" target="_blank">PERSONAL CARE
-                <span> <i class="fa-solid fa-chevron-down"></i></span>
-              </a>
-            
-          </div>
-          <div>
-              <a href="product page.html" target="_blank">MOM & BABY CARE
-               <span> <i class="fa-solid fa-chevron-down"></i></span>
-              </a>
-            
-          </div>
-          <div>
-              <a href="product page.html" target="_blank">FRAGRANCE
-              <span> <i class="fa-solid fa-chevron-down"></i></span></a>
-          </div>
-          <div>
-              <a href="product page.html" target="_blank">AYURVEDA
-                <span> <i class="fa-solid fa-chevron-down"></i></span>
-              </a>
-            
-          </div>
-          <div>
-              <a href="product page.html" target="_blank">BRANDS
-                <span> <i class="fa-solid fa-chevron-down"></i></span>
-              </a>
-          </div>
-          <div>
-              MY CART<span id="Cart_Total"></span>
-              <i class="fa-solid fa-cart-shopping"></i>
-           
-          </div>
-        </div>
-      </nav>
-    <div id="id01" class="modal">
-        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <form class="modal-content">
-            <div class="containernew">
-                <h2>CREATE NEW CUSTOMER ACCOUNT</h2>
-                <hr>
-                <div class="col">
-                    <a href="#" class="fb btn">
-                      <i class="fa fa-facebook fa-fw"></i> Sign with Facebook
-                     </a>
-                    
-                <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-                      </i> Sign with Google+
-                    </a>
-                  </div><br><br>
-                <lable for="name"><b>FULL NAME</b></lable><br>
-                <input type="text" placeholder="Enter Full Name"><br><br>
-                
-                <label for="email"><b>Email</b></label><br>
-                <input type="text" placeholder="Enter Email" name="email" required><br><br>
-                <label for="number"><b>PHONE NUMBER</b></label><br>
-                <input type="number" placeholder="enter phone number">  <br><br> 
-          
-                <label for="psw"><b>Password</b></label><br>
-                <input type="password" placeholder="Enter Password" name="psw" required><br><br>
-          
-                <label for="confirm password"><b>confirm Password</b></label><br>
-                <input type="password" placeholder="confirm Password" name="psw-repeat" required><br><br>
-                <div class="clearfix">
-                 <button type="submit" class="signupbtn">CREATE AN ACCOUNT</button>
-                  </div> 
-            </div> 
-        </form>   
-    </div>  
-    <footer>
-        <div id="wholeBody">
-          <div id="parentfooter">
-            <div class="listStyle">
-              <h4>CONTACT INFO</h4>
-              <li>(+91) 7877061041</li>
-              <li>sales@beautybebo.com</li>
-              <li>Open time: 10:00AM - 7:00PM</li>
-              <div id="socialMedia">
-                <div>
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-instagram"></i>
-                </div>
-              </div>
-            </div>
-            <div class="listStyle">
-              <h4>QUICK LINKS</h4>
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>Terms & Condition</li>
-              <li>Privacy Policy</li>
-              <li>Return & Refund Policy</li>
-              <li>Shipping Policy</li>
-            </div>
-            <div class="listStyle">
-              <h4>CUSTOMER INFO</h4>
-              <li>My Account</li>
-              <li>Track your Order</li>
-              <li>Order Returns</li>
-              <li>Wishlists</li>
-              <li>News & Events</li>
-              <li>FAQ</li>
-            </div>
-            <div class="listStyle">
-              <h4>CATEGORIES</h4>
-              <li>Make Up</li>
-              <li>Skin</li>
-              <li>Hair</li>
-              <li>Personal Care</li>
-              <li>Mom & Baby Care</li>
-              <li>Fragrance</li>
-              <li>Ayurveda</li>
-            </div>
-          </div>
-          <hr />
-          <div id="belowfooter">
-            <div>
-              <img
-                src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png"
-                alt="paymet_ways"
+              <input
+                type="text"
+                placeholder="Enter your search..."
+                class="inputSearch"
               />
             </div>
-            <h3>Signup For Newsletter</h3>
-            <div class="newsletter_footer"> 
-              <input type="email" placeholder="Your Email Address" />
-              <button>Subscribe</button>
+            <div id="searchIcon">
+              <div><i class="fa-solid fa-magnifying-glass"></i></div>
             </div>
           </div>
-          <hr />
-          <p>2020 All Rights Reserved</p>
         </div>
-      </footer>      
-</body>
+        <div id="favourites" onclick="SendToFavourite()">
+          <div>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+        <div id="MyProfile">
+          <div>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <p>My Account</p>
+        </div>
+      </div>
+    </header>
+    <!--                //  it is for navBar section   //                   -->
+
+    <nav>
+      <div id="parentNavBar">
+        <div>
+          <a href="product page.html" target="_blank"
+            >MAKE UP
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >SKIN
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >HAIR
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >PERSONAL CARE
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >MOM & BABY CARE
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >FRAGRANCE <span> <i class="fa-solid fa-chevron-down"></i></span
+          ></a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >AYURVEDA
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >BRANDS
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          MY CART<span id="Cart_Total"></span>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </nav>
+    <div id="id01" class="modal">
+      <span
+        onclick="document.getElementById('id02').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      <form class="modal-content">
+        <div class="containernew">
+          <h2>CREATE NEW CUSTOMER ACCOUNT</h2>
+          <hr />
+          <div class="col">
+            <a href="#" class="fb btn">
+              <i class="fa fa-facebook fa-fw"></i> Sign with Facebook
+            </a>
+
+            <a href="#" class="google btn"
+              ><i class="fa fa-google fa-fw"> </i> Sign with Google+
+            </a>
+          </div>
+          <br /><br />
+          <lable for="name"><b>FULL NAME</b></lable
+          ><br />
+          <input type="text" placeholder="Enter Full Name" /><br /><br />
+
+          <label for="email"><b>Email</b></label
+          ><br />
+          <input
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            required
+          /><br /><br />
+          <label for="number"><b>PHONE NUMBER</b></label
+          ><br />
+          <input type="number" placeholder="enter phone number" /> <br /><br />
+
+          <label for="psw"><b>Password</b></label
+          ><br />
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          /><br /><br />
+
+          <label for="confirm password"><b>confirm Password</b></label
+          ><br />
+          <input
+            type="password"
+            placeholder="confirm Password"
+            name="psw-repeat"
+            required
+          /><br /><br />
+          <div class="clearfix">
+            <button type="submit" class="signupbtn" onclick="wayToHome()">
+              CREATE AN ACCOUNT
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div id="wholeBody">
+        <div id="parentfooter">
+          <div class="listStyle">
+            <h4>CONTACT INFO</h4>
+            <li>(+91) 7877061041</li>
+            <li>sales@beautybebo.com</li>
+            <li>Open time: 10:00AM - 7:00PM</li>
+            <div id="socialMedia">
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <div class="listStyle">
+            <h4>QUICK LINKS</h4>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Terms & Condition</li>
+            <li>Privacy Policy</li>
+            <li>Return & Refund Policy</li>
+            <li>Shipping Policy</li>
+          </div>
+          <div class="listStyle">
+            <h4>CUSTOMER INFO</h4>
+            <li>My Account</li>
+            <li>Track your Order</li>
+            <li>Order Returns</li>
+            <li>Wishlists</li>
+            <li>News & Events</li>
+            <li>FAQ</li>
+          </div>
+          <div class="listStyle">
+            <h4>CATEGORIES</h4>
+            <li>Make Up</li>
+            <li>Skin</li>
+            <li>Hair</li>
+            <li>Personal Care</li>
+            <li>Mom & Baby Care</li>
+            <li>Fragrance</li>
+            <li>Ayurveda</li>
+          </div>
+        </div>
+        <hr />
+        <div id="belowfooter">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png"
+              alt="paymet_ways"
+            />
+          </div>
+          <h3>Signup For Newsletter</h3>
+          <div class="newsletter_footer">
+            <input type="email" placeholder="Your Email Address" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+        <hr />
+        <p>2020 All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>
+<script src="./Scripts/navbar.js"></script>
+<script>
+  function wayToHome() {
+    window.location.href = "index.html";
+  }
+
+  
+</script>
