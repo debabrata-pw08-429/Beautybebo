@@ -239,3 +239,11 @@ document
 function link_to_homepage() {
   window.location.href = "index.html";
 }
+document.querySelector("#parentNavBar div:last-child").addEventListener("click",sentToCart);
+ function sentToCart(){
+    window.location.href = "cart.html";
+ }
+ document.querySelector("#favourites div").addEventListener("click",SendToFavourite)
+ function SendToFavourite(){
+  window.location.href = "product page.html";
+}

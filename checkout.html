@@ -8,8 +8,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-       <link rel="stylesheet" href="Styles/navbar.css">
-       <link rel="stylesheet" href="Styles/footer.css">
+        <link rel="stylesheet" href="Styles/footer.css">
+        <link rel="stylesheet" href="Styles/navbar.css">
         <script src="https://kit.fontawesome.com/e04271b223.js" crossorigin="anonymous"></script>
         <style>
             #parent {
@@ -200,7 +200,7 @@
         </div>
       </div>
     </div>
-    <div id="favourites">
+    <div id="favourites" onclick="SendToFavourite()">
       <div>
         <i class="fa-solid fa-heart"></i>
       </div>
@@ -218,41 +218,55 @@
 <nav>
   <div id="parentNavBar">
     <div>
-      <a href="product page.html" target="_blank">MAKE UP</a>
+      <a href="product page.html" target="_blank">MAKE UP
+        <span> <i class="fa-solid fa-chevron-down"></i></span>
+      </a>
 
-      <i class="fa-solid fa-chevron-down"></i>
+     
     </div>
     <div>
-      SKIN
-      <i class="fa-solid fa-chevron-down"></i>
+        <a href="product page.html" target="_blank">SKIN
+          <span> <i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+      
     </div>
     <div>
-      HAIR
-      <i class="fa-solid fa-chevron-down"></i>
+        <a href="product page.html" target="_blank">HAIR
+          <span> <i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+      
     </div>
     <div>
-      PERSONAL CARE
-      <i class="fa-solid fa-chevron-down"></i>
+        <a href="product page.html" target="_blank">PERSONAL CARE
+          <span> <i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+      
     </div>
     <div>
-      MOM & BABY CARE
-      <i class="fa-solid fa-chevron-down"></i>
+        <a href="product page.html" target="_blank">MOM & BABY CARE
+         <span> <i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+      
     </div>
     <div>
-      FRAGRANCE
-      <i class="fa-solid fa-chevron-down"></i>
+        <a href="product page.html" target="_blank">FRAGRANCE
+        <span> <i class="fa-solid fa-chevron-down"></i></span></a>
     </div>
     <div>
-      AYURVEDA
-      <i class="fa-solid fa-chevron-down"></i>
+        <a href="product page.html" target="_blank">AYURVEDA
+          <span> <i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+      
     </div>
     <div>
-      BRANDS
-      <i class="fa-solid fa-chevron-down"></i>
+        <a href="product page.html" target="_blank">BRANDS
+          <span> <i class="fa-solid fa-chevron-down"></i></span>
+        </a>
     </div>
     <div>
-      MY CART<span id="Cart_Total"></span>
-      <i class="fa-solid fa-cart-shopping"></i>
+        MY CART<span id="Cart_Total"></span>
+        <i class="fa-solid fa-cart-shopping"></i>
+     
     </div>
   </div>
 </nav>
@@ -411,7 +425,7 @@
         />
       </div>
       <h3>Signup For Newsletter</h3>
-      <div>
+      <div class="newsletter_footer"> 
         <input type="email" placeholder="Your Email Address" />
         <button>Subscribe</button>
       </div>
