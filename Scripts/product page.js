@@ -213,3 +213,10 @@ window.onclick = function (event) {
     }
   }
 };
+
+document
+  .querySelector("#aboveNavBar img")
+  .addEventListener("click", link_to_homepage);
+function link_to_homepage() {
+  window.location.href = "index.html";
+}

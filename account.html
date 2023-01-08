@@ -1,19 +1,21 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products Page</title>
+    <title>User Account</title>
+
     <script
-      src="https://kit.fontawesome.com/9be8668747.js"
+      src="https://kit.fontawesome.com/e04271b223.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" type="text/css" href="Styles/product page.css" />
+    <link rel="stylesheet" href="Styles/account.css" />
     <link rel="stylesheet" href="Styles/navbar.css" />
     <link rel="stylesheet" href="Styles/footer.css" />
   </head>
 
   <body>
-    <!-- --------------------------------------------------------------HEADER------------------------------------------------------------------------  -->
     <div id="top_main">
       <header>
         <div id="upperBanner">
@@ -96,7 +98,6 @@
         </div>
       </header>
       <!--                //  it is for navBar section   //                   -->
-
       <nav>
         <div id="parentNavBar">
           <div>
@@ -141,99 +142,82 @@
         </div>
       </nav>
     </div>
-    <!-- ---------------------------------------------------------BODY----------------------------------------------------------------------------- -->
-    <div id="upparPartOfProduct">
-      <div id="filter">
-        <i class="fa-solid fa-filter"></i>
-        <select name="" id="FilterCate" onchange="handleFilter()">
-          <option value="pos">Postion</option>
-          <option value="proName">Product Name</option>
-          <option value="NewArr">New Arrivals</option>
-          <option value="htl">Price : High To Low</option>
-          <option value="lth">Price : Low To High</option>
-        </select>
+    <div id="parentbox">
+      <div class="head">
+        <p>Account</p>
+        <p>My Order</p>
+        <p>My Wishlist</p>
+        <hr />
+        <p>Address Book</p>
+        <p>Account Information</p>
+        <hr />
+        <p>My Product Reviews</p>
+        <p>Newsletter Subscriptions</p>
+        <img
+          src="https://www.beautybebo.com/pub/media/free-delivery.jpg"
+          alt="error"
+        />
       </div>
-      <div id="pages">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-      </div>
-    </div>
-    <div id="LeftSideDec">
-      <div id="SideMenu">
-        <h4>SHOP BY</h4>
-        <div class="dropdown">
-          <div>
-            <button onclick="myFunction()" class="dropbtn">Skin Type</button>
-            <div id="SkinType" class="dropdown-content">
-              <a href="#home">Combination</a>
-              <a href="#about">Normal</a>
-              <a href="#contact">All Types</a>
+      <div class="header">
+        <h1>My Account</h1>
+        <h2>Account Information</h2>
+        <hr />
+
+        <div id="information">
+          <div class="firstbox">
+            <h3>Contact Information</h3>
+            <hr />
+            <p>Ankit Gadhwe</p>
+            <p>ankitgadhwe3830@gmail.com</p>
+            <hr />
+            <div id="button">
+              <button>Edit</button>
+              <button>Change Password</button>
             </div>
           </div>
-          <div>
-            <p>Brands</p>
+
+          <div class="firstbox">
+            <h3>Newsletter</h3>
+            <hr />
+            <p>You aren"t subscribed to our newsletter</p>
+            <hr />
+
+            <div id="button">
+              <button>Edit</button>
+            </div>
           </div>
-          <div>
-            <p>Skin Type</p>
+        </div>
+
+        <div id="add">
+          <h2>ADDRESS BOOK</h2>
+          <p>Manage Address</p>
+        </div>
+        <hr />
+
+        <div id="information">
+          <div class="firstbox">
+            <h3>Default Billing Address</h3>
+            <hr />
+            <p>You have not set a default billing address</p>
+            <hr />
+            <div id="button">
+              <button>Edit Address</button>
+            </div>
           </div>
-          <div>
-            <p>My Price</p>
+
+          <div class="firstbox">
+            <h3>Default Billing Address</h3>
+            <hr />
+            <p>You have not set a default billing address</p>
+            <hr />
+
+            <div id="button">
+              <button>Edit</button>
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <img
-          src="https://www.beautybebo.com/pub/media/free-delivery.jpg"
-          alt="delivery-van"
-        />
-      </div>
     </div>
-
-    <div id="card_container">
-      <!-- <div id="filter">
-      <select name="" id="FilterCate" onchange="handleFilter()">
-        <option value="pos">Postion</option>
-        <option value="proName">Product Name</option>
-        <option value="NewArr">New Arrivals</option>
-        <option value="htl">Price : High To Low</option>
-        <option value="lth">Price : Low To High</option>
-      </select>
-    </div> -->
-      <!-- <div class="item">
-        <img
-          src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/b/b/bbj0001370-2.jpg"
-          alt=""
-        />
-        <p>
-          Ponds Super Light Gel Oil Free Moisturiser With Hyaluronic Acid +
-          Vitamin E
-        </p>
-        <p>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(9)</span>
-        </p>
-        <p>
-          <span class="strike_off_price">₹299.00</span>
-          <span class="price">₹264.00</span>
-          <span class="discount_per">12%</span>
-        </p>
-        <button class="btn_add">
-          <i class="fa-solid fa-bucket"></i>
-          Add To Cart
-        </button>
-        <button class="btn_fav">
-          <i class="fa-solid fa-heart"></i>
-        </button>
-      </div> -->
-    </div>
-    <!-- ---------------------------------------------------------------FOOTER-------------------------------------------------------------------- -->
     <footer>
       <div id="wholeBody">
         <div id="parentfooter">
@@ -287,7 +271,7 @@
             />
           </div>
           <h3>Signup For Newsletter</h3>
-          <div class="newsletter_footer">
+          <div>
             <input type="email" placeholder="Your Email Address" />
             <button>Subscribe</button>
           </div>
@@ -298,4 +282,7 @@
     </footer>
   </body>
 </html>
-<script type="text/javascript" src="Scripts/product page.js"></script>
+<script src="./Scripts/index.js"></script>
+<script src="./Scripts/card.js"></script>
+<script src="./Scripts/section_3.js"></script>
+<script src="./Scripts/section_4.js"></script>
