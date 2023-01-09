@@ -1,377 +1,424 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>checkout page</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="Styles/footer.css">
-        <link rel="stylesheet" href="Styles/navbar.css">
-        <script src="https://kit.fontawesome.com/e04271b223.js" crossorigin="anonymous"></script>
-        <style>
-            #parent {
-                margin:auto;
-              display:flex;
-                background-color: rgb(255,255,255);
-    
-                justify-content: space-evenly;
-                gap:400px;
-                padding-right: 95px;
-                width: auto;
-            
-            }
-           
-           #div1
-            {
-               
-                padding-left: 70px;
-                padding-top: 15px;
-            }
-    
-            #lp{
-                display:flex;
-                gap: 10px;
-            }
-            #button{
-                color:black;
-                background-color: black;
-                width: 30px;
-                
-            }
-            form:hover{
-                background-color: lightgrey;
-              
-            }
-            .holder{
-                width: 700px;
-                height: 25px;
-            } 
-            #role{
-                width:700px;
-                height: 25px;
-            }
-            #ln{
-    
-                 padding-top: 150px;
-                 padding-left: 257px;
-                 width: 50px;
-                 height: 25px;
-                 box-sizing: border-box;
-                 display:flex;
-               
-            }
-            
-            #sm{
-                margin-left: 200px;
-                 width:400px;
-                 display: inline-block;
-                 height:400px;
-                 margin-left: -200px;
-                 box-shadow: 2px 2px 5px 5px rgb(235, 235, 235);
-                 margin-top: 200px;
-                 justify-content: left;
-                 padding-left: 70px;
-                 
-            
-            }
-            
-            
-            #mk{
-                display:flex;
-                gap:10px;
-            }
-            #dc{
-                color:black;
-            }
-            #home
-            {
-                color:blueviolet;
-                font-size:50px;
-            }
-            #fresh{
-                      display:flex;
-                      gap:80px;
-                    background-color:  rgb(255,255,255);
-                    padding-top: 20px;
-                    padding-left: 20px;
-                    justify-content: center;
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Styles/footer.css" />
+    <link rel="stylesheet" href="Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/payment.css" />
+    <script
+      src="https://kit.fontawesome.com/e04271b223.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #parent {
+        margin: auto;
+        display: flex;
+        background-color: rgb(255, 255, 255);
 
-                      
-            }
-            #sub{
+        justify-content: space-evenly;
+        gap: 400px;
+        padding-right: 95px;
+        width: auto;
+      }
 
-              width: 80px;
-              height:40px;
-              color:white;
-              background-color: black;
+      #div1 {
+        padding-left: 70px;
+        padding-top: 15px;
+      }
 
-            }
-            #sub:hover{
-        
-                background-color: rgb(255, 0, 128);
-            
-  
-            }
-            #nn{
-                display:flex;
-                background-color:  rgb(255,255,255);
-                gap:20px;
-                padding-left: 20px;
-                justify-content: center;
-                margin:auto;
-                width:100%;
-            }
-            #nb
-            {
-              margin-left: 640px;
-              margin-bottom: 30px;
+      #lp {
+        display: flex;
+        gap: 10px;
+      }
+      #button {
+        color: black;
+        background-color: black;
+        width: 30px;
+      }
+      form:hover {
+        background-color: lightgrey;
+      }
+      .holder {
+        width: 700px;
+        height: 25px;
+      }
+      #role {
+        width: 700px;
+        height: 25px;
+      }
+      #ln {
+        padding-top: 150px;
+        padding-left: 257px;
+        width: 50px;
+        height: 25px;
+        box-sizing: border-box;
+        display: flex;
+      }
 
-            }
-          
-        </style>
-</head>
-<header>
-  <div id="upperBanner">
-    <div>
-      <img
-        src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
-        alt="upperBanner"
-      />
-    </div>
-    <!-- <div id = "googlePlayStore">
-        <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="google play store">
-     </div> -->
-  </div>
-  <!--                  //   it is for above navBar section   //         -->
-  <div id="aboveNavBar">
-    <div>
-      <img
-        src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
-        alt="comapny logo"
-      />
-    </div>
-    <!--                //    it is search & categorybox   //               -->
-    <div class="serchandcategory">
-      <div class="categoryBox">
-        <select>
-          <option value="">All Categories</option>
-          <option value="">--Makeup</option>
-          <option value="">----Face</option>
-          <option value="">------Foundation</option>
-          <option value="">------Foundation</option>
-          <option value="">------Foundation</option>
-          <option value="">----Eye</option>
-          <option value="">------Eye Shadow</option>
-          <option value="">------Eye Shadow</option>
-          <option value="">------Eye Shadow</option>
-          <option value="">--Skin</option>
-          <option value="">----Body Care</option>
-          <option value="">------Body Moisturiser</option>
-          <option value="">------Body Moisturiser</option>
-          <option value="">------Body Moisturiser</option>
-          <option value="">----Face Care</option>
-          <option value="">------Facial Kits</option>
-          <option value="">------Facial Kits</option>
-          <option value="">------Facial Kits</option>
-          <option value="">--Hair</option>
-          <option value="">----Hair Care</option>
-          <option value="">------Hair Color</option>
-          <option value="">------Hair Color</option>
-          <option value="">------Hair Color</option>
-          <option value="">----Hair Loss</option>
-          <option value="">------Shampoo</option>
-          <option value="">------Shampoo</option>
-          <option value="">------Shampoo</option>
-        </select>
-      </div>
-      <div class="searchBox">
-        <div>
-          <input
-            type="text"
-            placeholder="Enter your search..."
-            class="inputSearch"
-          />
+      #sm {
+        margin-left: 200px;
+        width: 400px;
+        display: inline-block;
+        height: 400px;
+        margin-left: -200px;
+        box-shadow: 2px 2px 5px 5px rgb(235, 235, 235);
+        margin-top: 200px;
+        justify-content: left;
+        padding-left: 70px;
+      }
+
+      #mk {
+        display: flex;
+        gap: 10px;
+      }
+      #dc {
+        color: black;
+      }
+      #home {
+        color: blueviolet;
+        font-size: 50px;
+      }
+      #fresh {
+        display: flex;
+        gap: 80px;
+        background-color: rgb(255, 255, 255);
+        padding-top: 20px;
+        padding-left: 20px;
+        justify-content: center;
+      }
+      #sub {
+        width: 80px;
+        height: 40px;
+        color: white;
+        background-color: black;
+      }
+      #sub:hover {
+        background-color: rgb(255, 0, 128);
+      }
+      #nn {
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        gap: 20px;
+        padding-left: 20px;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+      }
+      #nb {
+        margin-left: 640px;
+        margin-bottom: 30px;
+      }
+
+      form {
+        margin-right: 630px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header_checkout">
+      <header>
+        <div id="upperBanner">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
+              alt="upperBanner"
+            />
+          </div>
+          <!-- <div id = "googlePlayStore">
+            <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="google play store">
+         </div> -->
         </div>
-        <div id="searchIcon">
-          <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <!--                  //   it is for above navBar section   //         -->
+        <div id="aboveNavBar">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
+              alt="comapny logo"
+            />
+          </div>
+          <!--                //    it is search & categorybox   //               -->
+          <div class="serchandcategory">
+            <div class="categoryBox">
+              <select>
+                <option value="">All Categories</option>
+                <option value="">--Makeup</option>
+                <option value="">----Face</option>
+                <option value="">------Foundation</option>
+                <option value="">------Foundation</option>
+                <option value="">------Foundation</option>
+                <option value="">----Eye</option>
+                <option value="">------Eye Shadow</option>
+                <option value="">------Eye Shadow</option>
+                <option value="">------Eye Shadow</option>
+                <option value="">--Skin</option>
+                <option value="">----Body Care</option>
+                <option value="">------Body Moisturiser</option>
+                <option value="">------Body Moisturiser</option>
+                <option value="">------Body Moisturiser</option>
+                <option value="">----Face Care</option>
+                <option value="">------Facial Kits</option>
+                <option value="">------Facial Kits</option>
+                <option value="">------Facial Kits</option>
+                <option value="">--Hair</option>
+                <option value="">----Hair Care</option>
+                <option value="">------Hair Color</option>
+                <option value="">------Hair Color</option>
+                <option value="">------Hair Color</option>
+                <option value="">----Hair Loss</option>
+                <option value="">------Shampoo</option>
+                <option value="">------Shampoo</option>
+                <option value="">------Shampoo</option>
+              </select>
+            </div>
+            <div class="searchBox">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Enter your search..."
+                  class="inputSearch"
+                />
+              </div>
+              <div id="searchIcon">
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+              </div>
+            </div>
+          </div>
+          <div id="favourites" onclick="SendToFavourite()">
+            <div>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div id="MyProfile">
+            <div>
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <p>My Account</p>
+          </div>
         </div>
-      </div>
-    </div>
-    <div id="favourites" onclick="SendToFavourite()">
-      <div>
-        <i class="fa-solid fa-heart"></i>
-      </div>
-    </div>
-    <div id="MyProfile">
-      <div>
-        <i class="fa-solid fa-user"></i>
-      </div>
-      <p>My Account</p>
-    </div>
-  </div>
-</header>
-<!--                //  it is for navBar section   //                   -->
+      </header>
+      <!--                //  it is for navBar section   //                   -->
 
-<nav>
-  <div id="parentNavBar">
-    <div>
-      <a href="product page.html" target="_blank">MAKE UP
-        <span> <i class="fa-solid fa-chevron-down"></i></span>
-      </a>
+      <nav>
+        <div id="parentNavBar">
+          <div>
+            <a href="product page.html" target="_blank"
+              >MAKE UP
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >SKIN
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >HAIR
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >PERSONAL CARE
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >MOM & BABY CARE
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >FRAGRANCE <span> <i class="fa-solid fa-chevron-down"></i></span
+            ></a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >AYURVEDA
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >BRANDS
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            MY CART<span id="Cart_Total"></span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="fresh">
+      <div>
+        <a href="checkoutpage1.html"
+          ><i id="home" class="fa-solid fa-circle-arrow-right"></i
+        ></a>
+      </div>
+      <div>
+        <a href="payment.html"
+          ><i id="home" class="fa-solid fa-circle-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+    <div id="nn">
+      <div>
+        <h3>
+          CHECKOUT<br />
+          PAGE
+        </h3>
+      </div>
+      <div>
+        <h3>
+          ORDER AND<br />
+          PAYMENT PAGE
+        </h3>
+      </div>
+    </div>
+    <!-- <div id="parent"> -->
 
-     
-    </div>
-    <div>
-        <a href="product page.html" target="_blank">SKIN
-          <span> <i class="fa-solid fa-chevron-down"></i></span>
-        </a>
-      
-    </div>
-    <div>
-        <a href="product page.html" target="_blank">HAIR
-          <span> <i class="fa-solid fa-chevron-down"></i></span>
-        </a>
-      
-    </div>
-    <div>
-        <a href="product page.html" target="_blank">PERSONAL CARE
-          <span> <i class="fa-solid fa-chevron-down"></i></span>
-        </a>
-      
-    </div>
-    <div>
-        <a href="product page.html" target="_blank">MOM & BABY CARE
-         <span> <i class="fa-solid fa-chevron-down"></i></span>
-        </a>
-      
-    </div>
-    <div>
-        <a href="product page.html" target="_blank">FRAGRANCE
-        <span> <i class="fa-solid fa-chevron-down"></i></span></a>
-    </div>
-    <div>
-        <a href="product page.html" target="_blank">AYURVEDA
-          <span> <i class="fa-solid fa-chevron-down"></i></span>
-        </a>
-      
-    </div>
-    <div>
-        <a href="product page.html" target="_blank">BRANDS
-          <span> <i class="fa-solid fa-chevron-down"></i></span>
-        </a>
-    </div>
-    <div>
-        MY CART<span id="Cart_Total"></span>
-        <i class="fa-solid fa-cart-shopping"></i>
-     
-    </div>
-  </div>
-</nav>
-    <body>
-        <div id="fresh">
-            <div><a href="checkoutpage1.html"><i id="home" class="fa-solid fa-circle-arrow-right"></i></a></div>
-            <div><a href="payment.html"><i id="home" class="fa-solid fa-circle-arrow-right"></i></a></div>
-            </div>
-            <div id="nn">
-                <div><h3>CHECKOUT<br/> PAGE</h3></div>
-                <div><h3>ORDER AND<br/> PAYMENT PAGE</h3></div>
-            </div>
-        <div id="parent">
-         
-            <div id="div1">
-        <h2>Shipping Address</h2>
-        <hr/>
-        <form>
-        <p id="dc">
-            Email address *
-        </p>
-        
-        <input placeholder="Enter Email Address Here" type="email" class="holder" id="email"/>
+    <div id="div1">
+      <h2>Shipping Address</h2>
+      <hr />
+      <form>
+        <p id="dc">Email address *</p>
+
+        <input
+          placeholder="Enter Email Address Here"
+          type="email"
+          class="holder"
+          id="email"
+        />
         <p>You can create an account after checkout</p>
         <p id="dc">First Name *</p>
-        <input placeholder="Enter First Name Here" type="name" class="holder" id="firstname"/>
+        <input
+          placeholder="Enter First Name Here"
+          type="name"
+          class="holder"
+          id="firstname"
+        />
         <p id="dc">Last Name *</p>
-        <input placeholder="Enter Last Name Here" type="name" class="holder" id="lastname"/>
+        <input
+          placeholder="Enter Last Name Here"
+          type="name"
+          class="holder"
+          id="lastname"
+        />
         <p>Street Address *</p>
-        <input placeholder="Enter Street Address Here" type="name" class="holder" id="street"/>
+        <input
+          placeholder="Enter Street Address Here"
+          type="name"
+          class="holder"
+          id="street"
+        />
         <p id="dc">City *</p>
-        <input placeholder="Enter City Name Here" type="name" class="holder" id="city"/>
-        <P id="dc">State *</P>
-        <select name="Please select a region, State or province" type=text id="state">
-            <option value="Maharastra">Maharastra</option>
-            <option value="gujrat">gujrat</option>
-            <option value="karnataka">Rajastan</option>
-            <option value="Maharastra">Madhya pradesh</option>
-            <option value="Aarunachal">west bangal</option>
-            <option value="Zarkhand">karanataka</option>
-            <option value="Maharastra">Aasam</option>
-            <option value="gujrat">uttar pradesh</option>
-            <option value="karnataka">aandra pradesh</option>
-            <option value="Maharastra">tamilnadu</option>
-            <option value="gujrat">chattisgadh</option>
-            <option value="karnataka">Bihar</option>
-            <option value="Maharastra">Udisa</option>
-            <option value="gujrat">sikkim</option>
-            <option value="karnataka">mijoram</option>
-            <option value="Maharastra">aarunachal</option>
-            <option value="gujrat">Zarkhand</option>
-            <option value="karnataka">goa</option>
-            <option value="Maharastra">Panjab</option>
-            <option value="gujrat">Hariyana</option>
-            <option value="karnataka">kashmir</option>
-            <option value="Maharastra">kerala</option>
-            <option value="gujrat">telangana</option>
-            <option value="karnataka">ladakh</option>
-            <option value="Maharastra">Meghylaya</option>
-            <option value="gujrat">manipur</option>
-            <option value="karnataka">tripura</option>
-            <option value="Maharastra">nagaland</option>
-            <option value="gujrat">aandhaman</option>
-            <option value="karnataka">delhi</option>
-          </select>
-          <p id="dc">Zip/Postal Code</p>
-        <input placeholder="Zip postal code Here" type="number" class="holder" id="code"/>
-          <p id="dc">Country *</p>
-        <select name="country name" type=text id="role">
-            <option value="India">India</option>
-            </select>
+        <input
+          placeholder="Enter City Name Here"
+          type="name"
+          class="holder"
+          id="city"
+        />
+        <p id="dc">State *</p>
+        <select
+          name="Please select a region, State or province"
+          type="text"
+          id="state"
+        >
+          <option value="Maharastra">Maharastra</option>
+          <option value="gujrat">gujrat</option>
+          <option value="karnataka">Rajastan</option>
+          <option value="Maharastra">Madhya pradesh</option>
+          <option value="Aarunachal">west bangal</option>
+          <option value="Zarkhand">karanataka</option>
+          <option value="Maharastra">Aasam</option>
+          <option value="gujrat">uttar pradesh</option>
+          <option value="karnataka">aandra pradesh</option>
+          <option value="Maharastra">tamilnadu</option>
+          <option value="gujrat">chattisgadh</option>
+          <option value="karnataka">Bihar</option>
+          <option value="Maharastra">Udisa</option>
+          <option value="gujrat">sikkim</option>
+          <option value="karnataka">mijoram</option>
+          <option value="Maharastra">aarunachal</option>
+          <option value="gujrat">Zarkhand</option>
+          <option value="karnataka">goa</option>
+          <option value="Maharastra">Panjab</option>
+          <option value="gujrat">Hariyana</option>
+          <option value="karnataka">kashmir</option>
+          <option value="Maharastra">kerala</option>
+          <option value="gujrat">telangana</option>
+          <option value="karnataka">ladakh</option>
+          <option value="Maharastra">Meghylaya</option>
+          <option value="gujrat">manipur</option>
+          <option value="karnataka">tripura</option>
+          <option value="Maharastra">nagaland</option>
+          <option value="gujrat">aandhaman</option>
+          <option value="karnataka">delhi</option>
+        </select>
+        <p id="dc">Zip/Postal Code</p>
+        <input
+          placeholder="Zip postal code Here"
+          type="number"
+          class="holder"
+          id="code"
+        />
+        <p id="dc">Country *</p>
+        <select name="country name" type="text" id="role">
+          <option value="India">India</option>
+        </select>
         <p id="dc">Phone Number *</p>
-        <input placeholder="Enter Phone Number Here" type="number" class="holder" id="phone"/>
-        <br/>
-        <br/>
-        <h2>Delivery Charges </h2>
-        <hr/>
+        <input
+          placeholder="Enter Phone Number Here"
+          type="number"
+          class="holder"
+          id="phone"
+        />
+        <br />
+        <br />
+        <h2>Delivery Charges</h2>
+        <hr />
         <div id="lp">
-            <div>
-         <p>Rs 0.00</p>        
+          <div>
+            <p>Rs 0.00</p>
+          </div>
+          <div>
+            <p>Max 7 Buisness Days</p>
+          </div>
         </div>
-        <div >
-        <p>Max 7 Buisness Days</p>
+        <div id="nb" onclick="sent_to_payment()">
+          <input type="submit" value="NEXT" id="sub" />
         </div>
-        </div>
-        <div id="nb">
-        <input type="submit" value="NEXT" id="sub"/>
-      </div>
-        </form>
-    
-   
-    </div id="pin">
-    
-        <div id="sm">
-            <div><h2>ORDER SUMMARY</h2></div>
-            <div><p>item added in the cart</p></div>
-        </div>
+      </form>
     </div>
-    </body>
+
+    <!-- <div id="sm"> -->
+    <!-- <div><h2>ORDER SUMMARY</h2></div>
+            <div><p>item added in the cart</p></div> -->
+    <!-- left container summary  -->
+
+    <!-- </div> -->
+    <!-- </div> -->
 
     <!-- <div id="submitdetails_at">
         <p>NEXT</p>
     </div> -->
-
-</body>
+  </body>
+</html>
 <footer>
   <div id="wholeBody">
     <div id="parentfooter">
@@ -425,7 +472,7 @@
         />
       </div>
       <h3>Signup For Newsletter</h3>
-      <div class="newsletter_footer"> 
+      <div class="newsletter_footer">
         <input type="email" placeholder="Your Email Address" />
         <button>Subscribe</button>
       </div>
@@ -434,78 +481,91 @@
     <p>2020 All Rights Reserved</p>
   </div>
 </footer>
-</html>
 <script>
+  function next() {
+    console.log("hey");
+    event.preventDefault();
+    // // console.log("hello")
+    let obj = {
+      email: form.email.value,
+      first_name: form.first.value,
+      last_name: form.last.value,
+      street: form.street.value,
+      city: form.city.value,
+      state: form.state.value,
+      zip: form.zip.value,
+      country: form.country.value,
+      number: form.ph.value,
+    };
+    localStorage.setItem("userdata", JSON.stringify(obj));
+    window.location.href = "./payment.html";
+  }
+  document.getElementById("form").addEventListener("submit", next);
 
-    function next() {
-        console.log("hey");
-        event.preventDefault()
-        // // console.log("hello")
-        let obj = {
-            email: form.email.value,
-            first_name: form.first.value,
-            last_name: form.last.value,
-            street: form.street.value,
-            city: form.city.value,
-            state: form.state.value,
-            zip: form.zip.value,
-            country: form.country.value,
-            number: form.ph.value
-        }
-        localStorage.setItem("userdata", JSON.stringify(obj))
-        window.location.href = "./payment.html"
-    }
-    document.getElementById("form").addEventListener("submit", next)
+  let cart = JSON.parse(localStorage.getItem("sunidhiarr")) || [];
 
-    let cart = JSON.parse(localStorage.getItem("sunidhiarr")) || []
-    
-    var price = 0;
-    var count = 0;
-    show(cart)
-    function show(cart) {
-        cart.forEach(function (el) {
-            count++;
-            price += el.price
-            // console.log(el)
-            var div = document.createElement("div");
-            div.setAttribute("id", "cartbody")
-            var div1 = document.createElement("div");
+  var price = 0;
+  var count = 0;
+  show(cart);
+  function show(cart) {
+    cart.forEach(function (el) {
+      count++;
+      price += el.price;
+      // console.log(el)
+      var div = document.createElement("div");
+      div.setAttribute("id", "cartbody");
+      var div1 = document.createElement("div");
 
-            var img = document.createElement("img");
-            img.src = el.image;
-            div1.append(img)
-            var div2 = document.createElement("div");
-            div2.setAttribute("id", "div2")
-            var desc = document.createElement("div");
-            desc.innerText = el.title;
-            var quan = document.createElement("div");
-            quan.setAttribute("id", "quan")
-            quan.innerText = "qty = " + el.quantity;
-            div2.append(desc, quan)
-            var price = document.createElement("div");
+      var img = document.createElement("img");
+      img.src = el.image;
+      div1.append(img);
+      var div2 = document.createElement("div");
+      div2.setAttribute("id", "div2");
+      var desc = document.createElement("div");
+      desc.innerText = el.title;
+      var quan = document.createElement("div");
+      quan.setAttribute("id", "quan");
+      quan.innerText = "qty = " + el.quantity;
+      div2.append(desc, quan);
+      var price = document.createElement("div");
 
-            price.innerText = "price " + el.price;
-            var div3 = document.createElement("div");
-            div3.setAttribute("id", "div3")
-            div3.append(price)
-            // var img = document.createElement("div");
+      price.innerText = "price " + el.price;
+      var div3 = document.createElement("div");
+      div3.setAttribute("id", "div3");
+      div3.append(price);
+      // var img = document.createElement("div");
 
-            div.append(div1, div2, div3)
+      div.append(div1, div2, div3);
 
-            document.getElementById("summary").append(div)
+      document.getElementById("summary").append(div);
+    });
+  }
 
-        })
-
-
-    }
-
-    let UserDetail = JSON.parse(localStorage.getItem("UserDetail"));
-if (UserDetail === null) {
-  document.getElementById("UserName").innerHTML = "My Account";
-} else {
-  document.getElementById("UserName").innerHTML = UserDetail.first_name;
-}
-
+  let UserDetail = JSON.parse(localStorage.getItem("UserDetail"));
+  if (UserDetail === null) {
+    document.getElementById("UserName").innerHTML = "My Account";
+  } else {
+    document.getElementById("UserName").innerHTML = UserDetail.first_name;
+  }
 </script>
-<script src="./Scripts/navbar.js"></script>
 
+<script>
+  var cartarr = JSON.parse(localStorage.getItem("cartlist")) || [];
+  window.onload = function Subtotal() {
+    var total = cart.reduce((acc, curr) => {
+      return (acc + curr.price) * curr.qty;
+    }, 0);
+    document.querySelector("#cart-total").innerHTML = Number(total);
+
+    var incGST = Number(total) + 50 + 250;
+    var excGST = Number(total) + 50;
+    document.querySelector("#withgst").innerHTML = Number(incGST);
+    document.querySelector("#withoutgst").innerHTML = Number(excGST);
+  };
+
+  function sent_to_payment() {
+    window.location.href = "payment.html";
+  }
+</script>
+
+<script src="./Scripts/navbar.js"></script>
