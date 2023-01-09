@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Page</title>
+    <link rel="stylesheet" href="./Styles/favourites.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header>
+        <div id="upperBanner">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
+              alt="upperBanner"
+            />
+          </div>
+          <!-- <div id = "googlePlayStore">
+              <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="google play store">
+           </div> -->
+        </div>
+        <!--                  //   it is for above navBar section   //         -->
+        <div id="aboveNavBar">
+          <div>
+            <img
+              src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
+              alt="comapny logo"
+            />
+          </div>
+          <!--                //    it is search & categorybox   //               -->
+          <div class="serchandcategory">
+            <div class="categoryBox">
+              <select>
+                <option value="">All Categories</option>
+                <option value="">--Makeup</option>
+                <option value="">----Face</option>
+                <option value="">------Foundation</option>
+                <option value="">------Foundation</option>
+                <option value="">------Foundation</option>
+                <option value="">----Eye</option>
+                <option value="">------Eye Shadow</option>
+                <option value="">------Eye Shadow</option>
+                <option value="">------Eye Shadow</option>
+                <option value="">--Skin</option>
+                <option value="">----Body Care</option>
+                <option value="">------Body Moisturiser</option>
+                <option value="">------Body Moisturiser</option>
+                <option value="">------Body Moisturiser</option>
+                <option value="">----Face Care</option>
+                <option value="">------Facial Kits</option>
+                <option value="">------Facial Kits</option>
+                <option value="">------Facial Kits</option>
+                <option value="">--Hair</option>
+                <option value="">----Hair Care</option>
+                <option value="">------Hair Color</option>
+                <option value="">------Hair Color</option>
+                <option value="">------Hair Color</option>
+                <option value="">----Hair Loss</option>
+                <option value="">------Shampoo</option>
+                <option value="">------Shampoo</option>
+                <option value="">------Shampoo</option>
+              </select>
+            </div>
+            <div class="searchBox">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Enter your search..."
+                  class="inputSearch"
+                />
+              </div>
+              <div id="searchIcon">
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+              </div>
+            </div>
+          </div>
+          <div id="favourites" onclick="SendToFavourite()">
+            <div>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </div>
+          <div id="MyProfile">
+            <div>
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <p>My Account</p>
+          </div>
+        </div>
+      </header>
+      <!--                //  it is for navBar section   //                   -->
+  
+      <nav>
+        <div id="parentNavBar">
+          <div>
+            <a href="product page.html" target="_blank"
+              >MAKE UP
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >SKIN
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >HAIR
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >PERSONAL CARE
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >MOM & BABY CARE
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >FRAGRANCE <span> <i class="fa-solid fa-chevron-down"></i></span
+            ></a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >AYURVEDA
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            <a href="product page.html" target="_blank"
+              >BRANDS
+              <span> <i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          </div>
+          <div>
+            MY CART<span id="Cart_Total"></span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </nav>
+    <div id="parentbox">
+
+        <div id="sidebox">
+            <ul>
+                <li id="btn1">Account</li><br>
+                <li id="btn2">My Order</li><br>
+                <li id="btn3">My Wish List</li>
+                <hr><br>
+                <li id="btn4">Address Book</li><br>
+                <li id="btn5">Account Information</li>
+                <hr><br>
+                <li id="btn6">My Products Review</li><br>
+                <li id="btn7">Newsletter Subscriptions</li><br>
+
+                <img src="https://www.beautybebo.com/pub/media/free-delivery.jpg" alt="error">
+            </ul>
+        </div>
+
+        <div id="head">
+            <h1>MY WISH LIST</h1>
+            
+
+            <!-- body -->
+            <div class="parent-box">
+                <div class="head">
+                    <p class="item">ITEM</p>
+                    <p class="title">TITLE</p>
+                    <p class="price">PRICE</p>
+
+
+                    <p class="delete">DELETE</p>
+                </div>
+
+                <div class="header">
+                    <div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- ---------------------------------------- -->
+
+
+        </div>
+    </div>
+    <div id="last">
+        <button>UPDATE WISHLIST</button>
+        <button>SHARE WISHLIST</button>
+        <button>ADD ALL TO CART</button>
+    </div>
+
+
+
+    </div>
+    </div>
+    </div>
+
+</body>
+<footer>
+    <div id="wholeBody">
+      <div id="parentfooter">
+        <div class="listStyle">
+          <h4>CONTACT INFO</h4>
+          <li>(+91) 7877061041</li>
+          <li>sales@beautybebo.com</li>
+          <li>Open time: 10:00AM - 7:00PM</li>
+          <div id="socialMedia">
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="listStyle">
+          <h4>QUICK LINKS</h4>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Terms & Condition</li>
+          <li>Privacy Policy</li>
+          <li>Return & Refund Policy</li>
+          <li>Shipping Policy</li>
+        </div>
+        <div class="listStyle">
+          <h4>CUSTOMER INFO</h4>
+          <li>My Account</li>
+          <li>Track your Order</li>
+          <li>Order Returns</li>
+          <li>Wishlists</li>
+          <li>News & Events</li>
+          <li>FAQ</li>
+        </div>
+        <div class="listStyle">
+          <h4>CATEGORIES</h4>
+          <li>Make Up</li>
+          <li>Skin</li>
+          <li>Hair</li>
+          <li>Personal Care</li>
+          <li>Mom & Baby Care</li>
+          <li>Fragrance</li>
+          <li>Ayurveda</li>
+        </div>
+      </div>
+      <hr />
+      <div id="belowfooter">
+        <div>
+          <img
+            src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png"
+            alt="paymet_ways"
+          />
+        </div>
+        <h3>Signup For Newsletter</h3>
+        <div class="newsletter_footer">
+          <input type="email" placeholder="Your Email Address" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <hr />
+      <p>2020 All Rights Reserved</p>
+    </div>
+  </footer>
+</html>
+<script src="./Scripts/favourites.js"></script>

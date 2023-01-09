@@ -21,9 +21,9 @@ function sentToCart() {
 // document
 //   .querySelector("#favourites div")
 //   .addEventListener("click", SendToFavourite);
-function SendToFavourite() {
-  window.location.href = "login.html";
-}
+// function SendToFavourite() {
+//   window.location.href = "favourites.html";
+// }
 document
   .querySelector("#MyProfile > div")
   .addEventListener("click", addProfile);

@@ -1,0 +1,180 @@
+#parentbox {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    gap:10px
+}
+
+#sidebox {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+    width: fit-content;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    padding-top: 50px;
+}
+
+ul>li {
+    list-style: none;
+}
+
+#btn1:hover {
+    cursor: pointer;
+    color: pink;
+}
+
+#btn2:hover {
+    cursor: pointer;
+    color: pink;
+}
+
+#btn3 {
+    cursor: pointer;
+    color: pink;
+}
+
+#btn4:hover {
+    cursor: pointer;
+    color: pink;
+}
+
+#btn5:hover {
+    cursor: pointer;
+    color: pink;
+}
+
+#btn6:hover {
+    cursor: pointer;
+    color: pink;
+}
+
+#btn7:hover {
+    cursor: pointer;
+    color: pink;
+}
+#finalbox{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+}
+
+#pricebox{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+.mrp{
+    text-decoration: line-through;
+}
+.button{
+    display: flex;
+    gap:5px;
+
+}
+#inputbox{
+    width: 80%;
+    height: 40px;
+}
+.cart{
+    padding: 5px;
+    width: 200px;
+}
+.lastsection{
+    display: flex;
+    gap:10px;
+}
+.edit:hover{
+    cursor: pointer;
+    color: pink;
+}
+.remove:hover{
+    cursor: pointer;
+    color: pink;
+}
+#head{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 100%;
+    height: fit-content;
+}
+#innerbox{
+    display: block;
+}
+
+#last {
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+#last>button {
+    padding: 5px;
+    width: 200px;
+
+}
+/*  _________---*/
+
+.head{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.header>div{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+.item{
+    justify-content: flex-start;
+    width: 20%;
+    text-align: center;
+}
+.title{
+    width: 35%;
+    text-align: center;
+}
+.price{
+    width: 10%;
+    text-align: center;
+}
+.quantity{
+    width: 10%;
+    text-align: center;
+    
+}
+.total{
+ width: 10%;
+ text-align: center;
+   
+}
+.delete{
+    width:10%;
+    text-align:center;
+}
+hr{
+    color: gray;
+    width: 75%;
+}
+.header>div>img{
+    width: 15%;
+}
+.delete{
+    color: red;
+    cursor: pointer;
+
+}
+.delete:hover{
+    color: brown;
+    font-size: large;
+}
+#last > button{
+  background-color: pink;
+  color:white;
+}

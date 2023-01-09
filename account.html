@@ -13,153 +13,153 @@
     <link rel="stylesheet" href="Styles/account.css" />
     <link rel="stylesheet" href="Styles/navbar.css" />
     <link rel="stylesheet" href="Styles/footer.css" />
+    
   </head>
+  <div id="top_main">
+    <header>
+      <div id="upperBanner">
+        <div>
+          <img
+            src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
+            alt="upperBanner"
+          />
+        </div>
+        <!-- <div id = "googlePlayStore">
+            <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="google play store">
+         </div> -->
+      </div>
+      <!--                  //   it is for above navBar section   //         -->
+      <div id="aboveNavBar">
+        <div>
+          <img
+            src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
+            alt="comapny logo"
+          />
+        </div>
+        <!--                //    it is search & categorybox   //               -->
+        <div class="serchandcategory">
+          <div class="categoryBox">
+            <select>
+              <option value="">All Categories</option>
+              <option value="">--Makeup</option>
+              <option value="">----Face</option>
+              <option value="">------Foundation</option>
+              <option value="">------Foundation</option>
+              <option value="">------Foundation</option>
+              <option value="">----Eye</option>
+              <option value="">------Eye Shadow</option>
+              <option value="">------Eye Shadow</option>
+              <option value="">------Eye Shadow</option>
+              <option value="">--Skin</option>
+              <option value="">----Body Care</option>
+              <option value="">------Body Moisturiser</option>
+              <option value="">------Body Moisturiser</option>
+              <option value="">------Body Moisturiser</option>
+              <option value="">----Face Care</option>
+              <option value="">------Facial Kits</option>
+              <option value="">------Facial Kits</option>
+              <option value="">------Facial Kits</option>
+              <option value="">--Hair</option>
+              <option value="">----Hair Care</option>
+              <option value="">------Hair Color</option>
+              <option value="">------Hair Color</option>
+              <option value="">------Hair Color</option>
+              <option value="">----Hair Loss</option>
+              <option value="">------Shampoo</option>
+              <option value="">------Shampoo</option>
+              <option value="">------Shampoo</option>
+            </select>
+          </div>
+          <div class="searchBox">
+            <div>
+              <input
+                type="text"
+                placeholder="Enter your search..."
+                class="inputSearch"
+              />
+            </div>
+            <div id="searchIcon">
+              <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+          </div>
+        </div>
+        <div id="favourites" onclick="SendToFavourite()">
+          <div>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+        <div id="MyProfile">
+          <div>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <p>My Account</p>
+        </div>
+      </div>
+    </header>
+    <!--                //  it is for navBar section   //                   -->
 
+    <nav>
+      <div id="parentNavBar">
+        <div>
+          <a href="product page.html" target="_blank"
+            >MAKE UP
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >SKIN
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >HAIR
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >PERSONAL CARE
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >MOM & BABY CARE
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >FRAGRANCE <span> <i class="fa-solid fa-chevron-down"></i></span
+          ></a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >AYURVEDA
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          <a href="product page.html" target="_blank"
+            >BRANDS
+            <span> <i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        </div>
+        <div>
+          MY CART<span id="Cart_Total"></span>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </nav>
+  </div>
   <body>
-    <div id="top_main">
-      <header>
-        <div id="upperBanner">
-          <div>
-            <img
-              src="https://www.beautybebo.com/pub/media/ads/ad-desktop.jpg"
-              alt="upperBanner"
-            />
-          </div>
-          <!-- <div id = "googlePlayStore">
-              <img src="https://www.beautybebo.com/pub/media/bb-app.png" alt="google play store">
-           </div> -->
-        </div>
-        <!--                  //   it is for above navBar section   //         -->
-        <div id="aboveNavBar">
-          <div>
-            <img
-              src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png"
-              alt="comapny logo"
-            />
-          </div>
-          <!--                //    it is search & categorybox   //               -->
-          <div class="serchandcategory">
-            <div class="categoryBox">
-              <select>
-                <option value="">All Categories</option>
-                <option value="">--Makeup</option>
-                <option value="">----Face</option>
-                <option value="">------Foundation</option>
-                <option value="">------Foundation</option>
-                <option value="">------Foundation</option>
-                <option value="">----Eye</option>
-                <option value="">------Eye Shadow</option>
-                <option value="">------Eye Shadow</option>
-                <option value="">------Eye Shadow</option>
-                <option value="">--Skin</option>
-                <option value="">----Body Care</option>
-                <option value="">------Body Moisturiser</option>
-                <option value="">------Body Moisturiser</option>
-                <option value="">------Body Moisturiser</option>
-                <option value="">----Face Care</option>
-                <option value="">------Facial Kits</option>
-                <option value="">------Facial Kits</option>
-                <option value="">------Facial Kits</option>
-                <option value="">--Hair</option>
-                <option value="">----Hair Care</option>
-                <option value="">------Hair Color</option>
-                <option value="">------Hair Color</option>
-                <option value="">------Hair Color</option>
-                <option value="">----Hair Loss</option>
-                <option value="">------Shampoo</option>
-                <option value="">------Shampoo</option>
-                <option value="">------Shampoo</option>
-              </select>
-            </div>
-            <div class="searchBox">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Enter your search..."
-                  class="inputSearch"
-                />
-              </div>
-              <div id="searchIcon">
-                <div><i class="fa-solid fa-magnifying-glass"></i></div>
-              </div>
-            </div>
-          </div>
-          <div id="favourites" onclick="SendToFavourite()">
-            <div>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-          </div>
-          <div id="MyProfile">
-            <div>
-              <i class="fa-solid fa-user"></i>
-            </div>
-            <p>My Account</p>
-          </div>
-        </div>
-      </header>
-      <!--                //  it is for navBar section   //                   -->
-
-      <nav>
-        <div id="parentNavBar">
-          <div>
-            <a href="product page.html" target="_blank"
-              >MAKE UP
-              <span> <i class="fa-solid fa-chevron-down"></i></span>
-            </a>
-          </div>
-          <div>
-            <a href="product page.html" target="_blank"
-              >SKIN
-              <span> <i class="fa-solid fa-chevron-down"></i></span>
-            </a>
-          </div>
-          <div>
-            <a href="product page.html" target="_blank"
-              >HAIR
-              <span> <i class="fa-solid fa-chevron-down"></i></span>
-            </a>
-          </div>
-          <div>
-            <a href="product page.html" target="_blank"
-              >PERSONAL CARE
-              <span> <i class="fa-solid fa-chevron-down"></i></span>
-            </a>
-          </div>
-          <div>
-            <a href="product page.html" target="_blank"
-              >MOM & BABY CARE
-              <span> <i class="fa-solid fa-chevron-down"></i></span>
-            </a>
-          </div>
-          <div>
-            <a href="product page.html" target="_blank"
-              >FRAGRANCE <span> <i class="fa-solid fa-chevron-down"></i></span
-            ></a>
-          </div>
-          <div>
-            <a href="product page.html" target="_blank"
-              >AYURVEDA
-              <span> <i class="fa-solid fa-chevron-down"></i></span>
-            </a>
-          </div>
-          <div>
-            <a href="product page.html" target="_blank"
-              >BRANDS
-              <span> <i class="fa-solid fa-chevron-down"></i></span>
-            </a>
-          </div>
-          <div>
-            MY CART<span id="Cart_Total"></span>
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-      </nav>
-    </div>
     <div id="parentbox">
       <div class="head">
         <p>Account</p>
         <p>My Order</p>
-        <p>My Wishlist</p>
+        <p onclick="SendToFavourite()">My Wishlist</p>
         <hr />
         <p>Address Book</p>
         <p>Account Information</p>
@@ -296,3 +296,8 @@
   </body>
 </html>
 <script src="./Scripts/navbar.js"></script>
+<script>
+  function SendToFavourite(){
+    window.location.href = "favourites.html";
+  }
+</script>
