@@ -327,9 +327,16 @@
 </html>
 <script src="./Scripts/navbar.js"></script>
 <script>
+  localStorage.setItem("userlog",false);
+  var userlog = localStorage.getItem("userlog")
   function wayToHome() {
-    window.location.href = "index.html";
+    // window.location.href = "product page.html";
+    localStorage.setItem("userlog",true);
+    alert("user Logged in")
+    // localStorage.setItem("userlog",true);
+    window.location.href = "product page.html";
   }
+// localStorage.setItem("userlog",false);
 
   
 </script>

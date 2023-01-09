@@ -189,18 +189,31 @@ function displayproducts(list) {
     document.querySelector("#card_container").append(div);
   });
 }
-
+var userlog =  localStorage.getItem("userlog");
+console.log(userlog);
 // Cart Local Storage -
 var cartlist = JSON.parse(localStorage.getItem("cartlist")) || [];
 function fun1(data) {
-  cartlist.push(data);
-  localStorage.setItem("cartlist", JSON.stringify(cartlist));
+  if(userlog === "true"){
+    cartlist.push(data);
+    localStorage.setItem("cartlist", JSON.stringify(cartlist));
+    alert("items has added to cart");
+  }else{
+    alert("Please Login first");
+    window.location.href = "login.html";
+  }
 }
 // Favlist Local Storage
 var favlist = JSON.parse(localStorage.getItem("favlist")) || [];
 function fun2(data) {
-  favlist.push(data);
-  localStorage.setItem("favlist", JSON.stringify(favlist));
+  if(userlog === "true"){
+    favlist.push(data);
+    localStorage.setItem("favlist", JSON.stringify(favlist));
+    alert("items has added to cart");
+  }else{
+    alert("Please Login first");
+    window.location.href = "login.html";
+  }
 }
 
 function handleFilter() {
