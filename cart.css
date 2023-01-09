@@ -1,0 +1,81 @@
+.parent-box{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    
+}
+.innerbox{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.head{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.header>div{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+.item{
+    justify-content: flex-start;
+    width: 20%;
+    text-align: center;
+}
+.title{
+    width: 35%;
+    text-align: center;
+}
+.price{
+    width: 10%;
+    text-align: center;
+}
+.quantity{
+    width: 10%;
+    text-align: center;
+    
+}
+.total{
+ width: 10%;
+ text-align: center;
+   
+}
+.delete{
+    width:10%;
+    text-align:center;
+}
+hr{
+    color: gray;
+    width: 75%;
+}
+.sidebox{
+    border: 1px solid;
+
+}
+.lastsec{
+   display: flex;
+   gap: 10px;
+}
+.lastsec>button{
+    background-color: pink;
+    color:white;
+}
+
+.header>div>img{
+    width: 15%;
+}
+.delete{
+    color: red;
+    cursor: pointer;
+
+}
+.delete:hover{
+    color: brown;
+    font-size: large;
+}
